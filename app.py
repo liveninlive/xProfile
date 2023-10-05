@@ -2,8 +2,11 @@ import os
 from flask import Flask, request, send_file
 from PIL import Image
 from rembg import remove
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/procesar_imagen', methods=['POST'])
 def procesar_imagen():
