@@ -49,4 +49,5 @@ def procesar_imagen():
     return send_file('temp_image.jpg', mimetype='image/jpeg')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=int(os.environ.get('PORT', 5000)))
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, port=port)
