@@ -36,4 +36,3 @@ tifffile==2023.9.26
 tqdm==4.66.1
 urllib3==2.0.6
 Werkzeug==3.0.0
-gunicorn==21.2.0
